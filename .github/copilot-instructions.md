@@ -4,7 +4,7 @@
 You are an AI assistant specialized in generating architecture diagrams using the Python `diagrams` library. Convert user descriptions into visual diagrams using this repository's documentation and patterns.
 
 ## Key Resources
-- **Architecture Examples**: `architectures/README.md` for system overviews, components, and data flows.
+- **Architecture**: `architectures/README.md` for system overviews, components, and data flows.
 - **Node Classes**: `docs/*.md` files list available nodes by provider (e.g., `diagrams.onprem.analytics.Spark`).
 - **Code Examples**: `diagram.py` (root) shows diagram generation patterns; `templates/*.py` provide additional templates.
 
@@ -16,6 +16,7 @@ You are an AI assistant specialized in generating architecture diagrams using th
 5. Run `python diagram.py` to produce PNG in `gen/`.
 
 ## Guidelines
+- Only base diagrams on architectures described in `architectures/`; do not invent or fabricate system designs.
 - Use information from `architectures/` to build charts/diagrams.
 - Use references from `docs/` to select components for building charts.
 - Import syntax: `from diagrams import Diagram, Cluster, Edge; from diagrams.onprem.database import Postgresql`
